@@ -711,122 +711,6 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper.dock .menu,
-.cover-wrapper.featured .menu,
-.cover-wrapper.focus .menu {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.cover-wrapper.dock .menu .list-h a,
-.cover-wrapper.featured .menu .list-h a,
-.cover-wrapper.focus .menu .list-h a {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  line-height: 24px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-bottom: none;
-  text-align: center;
-  align-content: flex-end;
-  color: rgba(68,68,68,0.7);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h a,
-  .cover-wrapper.featured .menu .list-h a,
-  .cover-wrapper.focus .menu .list-h a {
-    padding: 12px 8px;
-  }
-}
-.cover-wrapper.dock .menu .list-h a i,
-.cover-wrapper.featured .menu .list-h a i,
-.cover-wrapper.focus .menu .list-h a i {
-  margin: 8px;
-}
-.cover-wrapper.dock .menu .list-h a p,
-.cover-wrapper.featured .menu .list-h a p,
-.cover-wrapper.focus .menu .list-h a p {
-  font-size: 0.875rem;
-}
-.cover-wrapper.dock .menu .list-h a.active,
-.cover-wrapper.featured .menu .list-h a.active,
-.cover-wrapper.focus .menu .list-h a.active {
-  background: var(--color-card);
-  backdrop-filter: none;
-}
-.cover-wrapper.dock .menu .list-h a.active i,
-.cover-wrapper.featured .menu .list-h a.active i,
-.cover-wrapper.focus .menu .list-h a.active i,
-.cover-wrapper.dock .menu .list-h a.active i+p,
-.cover-wrapper.featured .menu .list-h a.active i+p,
-.cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
-}
-.cover-wrapper.dock .menu .list-h a.active img+p,
-.cover-wrapper.featured .menu .list-h a.active img+p,
-.cover-wrapper.focus .menu .list-h a.active img+p {
-  color: var(--color-text);
-}
-.cover-wrapper.dock .menu .list-h a:hover,
-.cover-wrapper.featured .menu .list-h a:hover,
-.cover-wrapper.focus .menu .list-h a:hover {
-  background: var(--color-card);
-}
-.cover-wrapper.dock .top {
-  margin-bottom: 48px;
-}
-.cover-wrapper.dock .menu {
-  background: rgba(255,255,255,0.5);
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-}
-.cover-wrapper.dock .menu .list-h {
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -khtml-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -o-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  margin: 4px;
-}
-.cover-wrapper.dock .menu .list-h a+a {
-  margin-left: 4px;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h {
-    overflow-x: scroll;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
-    cursor: pointer;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
-  }
-}
-@supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.dock .menu {
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: saturate(200%) blur(20px);
-  }
-}
 @font-face {
   font-family: 'UbuntuMono';
   src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
@@ -1740,7 +1624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1668869173014),
+    lastupdate: new Date(1668959535927),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2427,7 +2311,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="half" class='cover-wrapper  search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2435,11 +2319,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">示例博客</p>
     
     
   </div>
   <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="搜一下.." />
+          <i class="icon fa-solid fa-search fa-fw"></i>
+        </form>
+      </div>
+    
     <div class='menu navigation'>
       <div class='list-h'>
         
@@ -2448,42 +2340,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
+              <p>文档</p>
             </a>
           
             <a href="/faqs/"
               
               
               active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
+              <p>帮助</p>
             </a>
           
             <a href="/examples/"
               
               
               active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
+              <p>示例</p>
             </a>
           
             <a href="/contributors/"
               
               
               active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
+              <p>社区</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
+              <p>博客</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
               
               
               active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+              <p>源码</p>
             </a>
           
         
@@ -2510,9 +2402,62 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/20/第一篇示例文章/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="示例博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="示例博客">
+    <meta itemprop="description" content="这是一个实例博客">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/11/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E7%A4%BA%E4%BE%8B%E6%96%87%E7%AB%A0/"  itemprop="url">
+        第一篇示例文章
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-11-20T00:16:33+08:00">2022-11-20</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/11/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E7%A4%BA%E4%BE%8B%E6%96%87%E7%AB%A0/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2788,7 +2733,7 @@ Qu...
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © 2017-2022 XXX</a></p>
+        <p><a href="/">Copyright © 2017-2023 XXX</a></p>
 
         </div>
       
